@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Regressao'){
             steps{
-              bat 'mvn test -Dsurefire.suiteXmlFiles=suites/regressao.xml'
+              bat 'mvn test -Dsurefire.suiteXmlFiles="suites/regressao.xml"'
             }
         }
     }

@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Regressao'){
             steps{
-              bat 'mvn test -Dtest="RelizarLogin,RealizarLoginAlternativos"'
+              sh('mvn test -Dsurefire.suiteXmlFiles=suites/regressao.xml')
             }
         }
     }

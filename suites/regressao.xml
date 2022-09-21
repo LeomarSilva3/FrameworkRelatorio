@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="TestesRegressivos" verbose = "1">
     <test name="Regressão">
-        <packages>
-            <package name="test"></package>
-        </packages>
+        <classes>
+            <class name="tests.RelizarLogin"/>
+            <class name="tests.RealizarLoginAlternativos"/>
+        </classes>
     </test>
 </suite>

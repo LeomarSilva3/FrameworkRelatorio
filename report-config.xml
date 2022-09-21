@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<extentreports>
+    <configuration>
+        <theme>dark</theme>
+        <encoding>Cp1252</encoding>
+        <encoding>UTF-8</encoding>
+        <protocol>https</protocol>
+        <documentTitle>Report Demo</documentTitle>
+        <reportName>Report Name</reportName>
+        <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+        <scripts>
+            <![CDATA[
+                $(document).ready(function(){
+                });
+            ]]>
+        </scripts>
+    </configuration>
+</extentreports>

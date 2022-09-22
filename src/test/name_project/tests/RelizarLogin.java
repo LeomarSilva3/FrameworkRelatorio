@@ -2,8 +2,10 @@ package tests;
 
 import baseTest.BaseTest;
 import interactions.LoginPageInteractions;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+@Parameters({"regressao"})
 public class RelizarLogin extends BaseTest {
 
     @Test

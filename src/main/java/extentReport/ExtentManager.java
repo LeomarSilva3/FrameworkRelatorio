@@ -32,6 +32,6 @@ public class ExtentManager {
             jenkins = new ExtentReports("src/main/java/reports/report" + filePath, true );
         }
         extent.loadConfig(new File("report-config.xml"));
-        return extent;
+        return jenkins;
     }
 }

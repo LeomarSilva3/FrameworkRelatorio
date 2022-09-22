@@ -2,7 +2,7 @@ package enums;
 
 public enum NomeProjetoEnum {
 
-    NOME_PROJETO_ENUM("name_project");
+    NOME_PROJETO_ENUM("java");
 
     private final String projetoName;
 

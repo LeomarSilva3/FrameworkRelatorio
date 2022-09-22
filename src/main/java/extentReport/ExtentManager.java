@@ -27,7 +27,7 @@ public class ExtentManager {
 
     public synchronized static ExtentReports getReporter(){
         if(extent == null){
-            extent = new ExtentReports("utils/reports/report_" + getDataHora() + filePath, true );
+            extent = new ExtentReports("src/main/java/reports/report_" + getDataHora() + filePath, true );
         }
         extent.loadConfig(new File("report-config.xml"));
         return extent;

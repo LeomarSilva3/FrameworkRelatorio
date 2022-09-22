@@ -11,6 +11,7 @@ import java.util.GregorianCalendar;
 
 public class ExtentManager {
     static ExtentReports extent;
+    static ExtentReports jenkins;
     final static String filePath = ".html";
 
     public static String getDataHora(){
@@ -28,6 +29,7 @@ public class ExtentManager {
     public synchronized static ExtentReports getReporter(){
         if(extent == null){
             extent = new ExtentReports("src/main/java/reports/report_" + getDataHora() + filePath, true );
+            jenkins = new ExtentReports("src/main/java/reports/report" + filePath, true );
         }
         extent.loadConfig(new File("report-config.xml"));
         return extent;
